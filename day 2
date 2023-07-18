@@ -1,0 +1,173 @@
+1.accept the two numbers and print the great value of the two
+
+public class Main
+ {
+   public static void main (String[]args)
+   {
+
+     int num1 = 50, num2 = 20;
+     if (num1 == num2)
+       System.out.println ("both are equal");
+     else if (num1 > num2)
+         System.out.println (num1 + " is greater");
+
+     else
+         System.out.println (num2 + " is greater");
+
+   }
+ }
+0 comments on c
+
+
+2.accept the two number N and print whether their sum is odd or even
+
+import java.util.Scanner;
+public class Sum_Odd_Even 
+{
+    public static void main(String[] args) 
+    {
+        int n, sumE = 0, sumO = 0;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number of elements in array:");
+        n = s.nextInt();
+        int[] a = new int[n];
+        System.out.println("Enter the elements of the array:");
+        for(int i = 0; i < n; i++)
+        {
+            a[i] = s.nextInt();
+        }
+        for(int i = 0; i < n; i++)
+        {
+            if(a[i] % 2 == 0)
+            {
+                sumE = sumE + a[i];
+            }
+            else
+            {
+                sumO = sumO + a[i];
+            }
+        }
+        System.out.println("Sum of Even Numbers:"+sumE);
+        System.out.println("Sum of Odd Numbers:"+sumO);
+    }
+}
+
+
+3.accept a number N and print whether the number is even or odd
+
+
+import java.util.Scanner;
+
+public class EvenOdd {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
+
+
+4.accept a number N and print whether it is positive,negative or zero
+
+class HelloWorld {
+    static void checkNumber(int num){
+        if(num>0)
+            System.out.println(num + " is POSITIVE NUMBER.");
+        else if(num<0)
+            System.out.println(num + " is NEGATIVE NUMBER.");
+        else
+            System.out.println(num + " is a ZERO.");
+    }
+    public static void main( String args[] ) {
+        int no1 = 20;
+        int no2 = 0;
+        int no3 = -100;
+        int no4 = 4 * -1;
+        checkNumber(no1);
+        checkNumber(no2);
+        checkNumber(no3);
+        checkNumber(no4);
+    }
+
+
+5.print at numbrs backwards from 100 to 0
+
+import java.util.*;
+
+class GFG {
+static void PrintReverseOrder(int N)
+{
+
+    for (int i = 100; i > 0; i--)
+        System.out.print( +i + " ");
+}
+public static void main(String[] args)
+{
+    int N = 5;
+
+    PrintReverseOrder(N);
+}
+public class Main{
+    public static void main(String [] args){
+        for(int i=100; i>=0;i--){
+            System.out.println("The number is:" + i);
+        }
+    }
+}
+
+
+6.create print all number from 1 to 100
+
+class JavaExample {
+   public static void main(String args[]) {
+	int n = 100;
+	System.out.print("Numbers from 1 to "+n+" are: ");
+	for (int i = 1; i <= n; i++) {
+		System.out.print(i + " ");
+	}
+   }
+
+7.print alternative number starting from 0 to 100
+
+class MainClass {   
+  public static void Main() { 
+    for(int i = 0; i <= 100; i++) {  
+      if((i%2) != 0) 
+         continue; 
+      Console.WriteLine(i); 
+    } 
+
+  }   
+}
+
+
+8.print the alternate number starting from 1 to 99
+
+import java.util.*;
+ public class Exercise48 {
+ public class Exercise {
+     public static void main(String[] args){
+	for (int i = 1; i < 100; i++) {
+			if (i % 2 != 0) {
+
+
+9.print numbers backwards from 100 to 1 by skiping 2 numbers
+
+
+public class Main{
+    public static void main(String [] args){
+        int i=100;
+        while(i>=0){
+            System.out.println("The number is:" + i);
+            i=i-3;
+        }
+    }
+}
